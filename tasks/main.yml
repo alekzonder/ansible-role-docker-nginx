@@ -61,9 +61,9 @@
     exposed_ports: '{{ nginx_exposed_ports }}'
     state: 'started'
     restart_policy: 'always'
-    log_driver: 'syslog'
-    log_options:
-      tag: "{{ nginx_container_name }}"
+#    log_driver: 'syslog'
+#    log_options:
+#      tag: "{{ nginx_container_name }}"
 
 - meta: flush_handlers
 
